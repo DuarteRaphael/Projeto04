@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace Projeto04.Interfaces
 {
-    public interface IBaseRepository
+    public interface IBaseRepository<T>
     {
-        void Inserir();
-        void Alterar();
-        void Excluir();
-        List<T class> Consultar();
+        void Inserir(T obj);
+        void Alterar(T obj);
+        void Excluir(T obj);
+        List<T> Consultar();
     }
 }
