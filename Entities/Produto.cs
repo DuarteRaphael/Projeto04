@@ -10,7 +10,7 @@ namespace Projeto04.Entities
     {
         #region Propriedades
         public Guid IdProduto { get; set; }
-        public string Nome { get; set; }
+        public string? Nome { get; set; }
         public decimal Preco { get; set; }
         public int Quantidade { get; set; }
         public DateTime DataCompra { get; set; }
@@ -18,7 +18,7 @@ namespace Projeto04.Entities
         #endregion
 
         #region Relacionamentos
-        public Fornecedor Fornecedor { get; set; }
+        public Fornecedor? Fornecedor { get; set; }
         #endregion
     }
 }

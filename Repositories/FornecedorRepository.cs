@@ -27,7 +27,10 @@ namespace Projeto04.Repositories
         public void Inserir(Fornecedor obj)
         {
             //escrevendo o comando SQL que será executado no banco.
-            var query = @"INSERT INTO FORNECEDOR(IDFORNECEDOR, NOME, CNPJ) VALUES(@IdFornecedor, @Nome, @Cnpj)";
+            var query = @"
+                        INSERT INTO FORNECEDOR(IDFORNECEDOR, NOME, CNPJ)
+                        VALUES(@IdFornecedor, @Nome, @Cnpj)
+                        ";
 
             //abrindo uma conexão com o banco de dados
             using (var connection = new SqlConnection(_connectionstring))

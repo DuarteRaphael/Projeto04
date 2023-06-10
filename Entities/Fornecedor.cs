@@ -13,12 +13,12 @@ namespace Projeto04.Entities
     {
         #region Propiedades
         public Guid IdFornecedor { get; set; }
-        public string Nome { get; set; }
-        public string Cnpj { get; set; } 
+        public string? Nome { get; set; }
+        public string? Cnpj { get; set; } 
         #endregion
 
         #region Relacionamentos
-        public List<Produto> Produtos { get; set; }
+        public List<Produto>? Produtos { get; set; }
         #endregion
     }
 }
